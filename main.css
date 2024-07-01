@@ -1,58 +1,90 @@
+/* Reset default styles */
 * {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
+/* Top-Navbar */
+.top_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+.top_nav .top-menu {
+  display: flex;
+  list-style: none;
 }
-
-/* Small screens (up to 600px) */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-  }
+.top_nav .top-menu li {
+  margin-left: 15px;
 }
-/* Medium screens (601px to 1024px) */
-/* Large screens (1025px and above) */
-.top {
-  background-color: #0085ca;
-  font-size: small;
-  color: #f9f9f9;
-}
-.top h3 {
-  text-align: center;
-}
-.top h3 a {
+.top_nav .top-menu li a {
   text-decoration: none;
-  color: #f9f9f9;
+  color: black;
+}
+.top_nav .top2-menu {
+  display: flex;
+  list-style: none;
+}
+.top_nav .top2-menu li {
+  margin-left: 15px;
+}
+.top_nav .top2-menu li a {
+  text-decoration: none;
+  color: black;
 }
 
+/* Navbar styling */
 .navbar {
   display: flex;
   justify-content: space-around;
-  border: 2px solid;
   align-items: center;
+  background-color: #e3e0e0;
+  padding: 10px;
 }
-.navbar h1 {
-  color: color-mix(in srgb, color percentage, color percentage);
+.navbar .navbar-logo {
+  font-size: 30px;
+  font-weight: bold;
 }
-.navbar .menu {
+.navbar .navbar-menu {
+  list-style-type: none;
   display: flex;
-  text-decoration: none;
 }
-.navbar .menu select {
+.navbar .navbar-menu li {
+  padding: 0 15px;
+  border-right: 1px solid #ddd;
+}
+.navbar .search {
+  padding: 0 15px;
+  border-right: 1px solid #ddd;
+  width: 25%;
+}
+.navbar .search input {
   border: none;
-  padding: -20px;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
 }
-.navbar .menu .submenu {
-  display: none;
-  position: absolute;
+.navbar .icons span {
+  margin-left: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .menu-icon {
+    display: block;
+  }
+}
+
+.heading ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: arial;
+  padding: 13px 14px;
+  text-decoration: none;
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */

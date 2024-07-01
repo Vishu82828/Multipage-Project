@@ -1,69 +1,108 @@
-*{
-    padding: 0px;
-    margin: 0px;
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    font-size: 16px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Small screens (up to 600px) */
-@media (max-width: 600px) {
-
-    .navbar {
-        flex-direction: column;
-        
+/* Top-Navbar */
+.top_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .top-menu{
+        display: flex;
+        list-style: none;
+        // gap: 20px;
+        li{
+            margin-left: 15px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .top2-menu{
+        display: flex;
+        list-style: none;
+        li{
+            margin-left: 15px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
     }
 }
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e3e0e0;
+    padding: 10px;
 
-/* Medium screens (601px to 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
-}
+    // Logo styling
+    .navbar-logo {
+        font-size: 30px;
+        font-weight: bold;
+    }
 
-/* Large screens (1025px and above) */
-@media (min-width: 1025px) {
-}
+    // Menu items styling
+    .navbar-menu {
+        list-style-type: none;
+        display: flex;
 
-.top{
-    background-color: #0085ca;
-    font-size: small;
-    color: #f9f9f9;
-    h3{
-        text-align: center;
-        a{
-            text-decoration: none;
-            color: #f9f9f9;
+        li {
+            padding: 0 15px;
+            border-right: 1px solid #ddd;
+            // font-family: arial;
+        }
+    }
+
+    //Search box
+    .search{
+        padding: 0 15px;
+        border-right: 1px solid #ddd;
+        width: 25%;
+        input{
+            border: none;
+            outline: none;
+            width: 100%;
+            height: 40px;
+            border-radius: 10px;
+        }
+    }
+
+    // Icons styling
+    .icons {
+        span {
+            margin-left: 15px;
+            cursor: pointer;
+        }
+    }
+
+    // Responsive adjustments
+    @media screen and (max-width: 600px) {
+        .menu {
+            display: none;
+        }
+        .menu-icon {
+            display: block;
         }
     }
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid;
-    align-items: center;
-    h1{
-        // $mixed-color1-2: mix($color1, $color2, 50%); // 50% blend ;
-        color:  color-mix(in srgb, color percentage, color percentage)
+// Heading Lines
+.heading{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        font-family: arial;
+        padding: 13px 14px;
+        text-decoration: none;
+        list-style: none;
     }
-   .menu{
-    display: flex;
-    text-decoration: none;
-    select{
-        border: none;
-        // gap: -10%;
-        padding: -20px;
-    }
-    .submenu{
-        display: none;
-        position: absolute;
-    }
-   }
 }
+

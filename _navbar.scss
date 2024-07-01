@@ -1,0 +1,69 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Small screens (up to 600px) */
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        
+    }
+}
+
+/* Medium screens (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+
+/* Large screens (1025px and above) */
+@media (min-width: 1025px) {
+}
+
+.top{
+    background-color: #0085ca;
+    font-size: small;
+    color: #f9f9f9;
+    h3{
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: #f9f9f9;
+        }
+    }
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid;
+    align-items: center;
+    h1{
+        // $mixed-color1-2: mix($color1, $color2, 50%); // 50% blend ;
+        color:  color-mix(in srgb, color percentage, color percentage)
+    }
+   .menu{
+    display: flex;
+    text-decoration: none;
+    select{
+        border: none;
+        // gap: -10%;
+        padding: -20px;
+    }
+    .submenu{
+        display: none;
+        position: absolute;
+    }
+   }
+}

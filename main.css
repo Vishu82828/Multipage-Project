@@ -1,0 +1,58 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Small screens (up to 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+/* Medium screens (601px to 1024px) */
+/* Large screens (1025px and above) */
+.top {
+  background-color: #0085ca;
+  font-size: small;
+  color: #f9f9f9;
+}
+.top h3 {
+  text-align: center;
+}
+.top h3 a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid;
+  align-items: center;
+}
+.navbar h1 {
+  color: color-mix(in srgb, color percentage, color percentage);
+}
+.navbar .menu {
+  display: flex;
+  text-decoration: none;
+}
+.navbar .menu select {
+  border: none;
+  padding: -20px;
+}
+.navbar .menu .submenu {
+  display: none;
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */

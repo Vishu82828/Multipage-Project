@@ -53,11 +53,11 @@
 }
 .navbar .navbar-menu li {
   padding: 0 15px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #faf7f7;
 }
 .navbar .search {
   padding: 0 15px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #fcfafa;
   width: 25%;
 }
 .navbar .search input {
@@ -70,6 +70,10 @@
 .navbar .icons span {
   margin-left: 15px;
   cursor: pointer;
+}
+.navbar .icons a {
+  text-decoration: none;
+  color: black;
 }
 @media screen and (max-width: 600px) {
   .navbar .menu {
@@ -87,4 +91,287 @@
   padding: 13px 14px;
   text-decoration: none;
   list-style: none;
+}
+
+.first {
+  display: flex;
+  justify-content: space-around;
+  padding: 13px 14px;
+}
+.first .a1 {
+  background-image: url(HC-common.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 32%;
+}
+.first .a2 {
+  background-image: url(HC-trending.gif);
+  background-size: cover;
+  height: 400px;
+  width: 33%;
+}
+.first .a3 {
+  background-image: url(HC-cargos.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 32%;
+}
+
+.bill-board {
+  background-image: url(banner.webp);
+  background-size: cover;
+  width: 97%;
+  height: 120px;
+  margin-left: 1.5%;
+  margin-top: 10px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 97%;
+  margin-left: 1.5%;
+  padding: 14px;
+  position: relative;
+  top: 20px;
+  border-bottom: 2px solid rgb(139, 138, 138);
+  gap: 10px;
+  font-family: arial;
+  color: rgb(88, 88, 88);
+}
+.countdown #time {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.shop {
+  margin-top: 40px;
+}
+.shop h2 {
+  text-align: center;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  color: rgb(8, 8, 8);
+}
+.shop .row1 {
+  margin-left: 1.5%;
+  margin-top: 30px;
+  display: flex;
+}
+.shop .row1 .img1 {
+  background-image: url(img1.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop .row1 .img2 {
+  background-image: url(img2.webp);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop .row1 .img3 {
+  background-image: url(img3.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop .row1 .img4 {
+  background-image: url(img4.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop .row1 .img5 {
+  background-image: url(img5.webp);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop .row1 .img6 {
+  background-image: url(img6.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop .row2 {
+  margin-left: 1.5%;
+  margin-top: 10px;
+  display: flex;
+}
+.shop .row2 .img7 {
+  background-image: url(img7.webp);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop .row2 .img8 {
+  background-image: url(img8.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop .row2 .img9 {
+  background-image: url(img9.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop .row2 .img10 {
+  background-image: url(img10.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop .row2 .img11 {
+  background-image: url(img11.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop .row2 .img12 {
+  background-image: url(img12.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+
+.shop_women {
+  margin-top: 40px;
+}
+.shop_women h2 {
+  text-align: center;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  color: rgb(8, 8, 8);
+}
+.shop_women .row1 {
+  margin-left: 1.5%;
+  margin-top: 30px;
+  display: flex;
+}
+.shop_women .row1 .img1 {
+  background-image: url(imgw1.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop_women .row1 .img2 {
+  background-image: url(imgw2.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop_women .row1 .img3 {
+  background-image: url(imgw3.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop_women .row1 .img4 {
+  background-image: url(imgw4.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop_women .row1 .img5 {
+  background-image: url(imgw5.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop_women .row1 .img6 {
+  background-image: url(imgw6.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop_women .row2 {
+  margin-left: 1.5%;
+  margin-top: 10px;
+  display: flex;
+}
+.shop_women .row2 .img7 {
+  background-image: url(imgw7.webp);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop_women .row2 .img8 {
+  background-image: url(imgw8.webp);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop_women .row2 .img9 {
+  background-image: url(imgw9.webp);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop_women .row2 .img10 {
+  background-image: url(imgw10.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop_women .row2 .img11 {
+  background-image: url(imgw11.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+.shop_women .row2 .img12 {
+  background-image: url(imgw12.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 16.18%;
+}
+
+.bestsellers {
+  margin-left: 1.5%;
+}
+.bestsellers h2 {
+  margin-top: 60px;
+  text-align: center;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  color: rgb(8, 8, 8);
+}
+.bestsellers .img-bestsellers {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.bestsellers .img-bestsellers .img_a1 {
+  background-image: url(men-s-black-house-of-the-dragon-iconic-graphic-printed-t-shirt.webp);
+  background-size: contain;
+  height: 250px;
+  width: 18%;
+}
+.bestsellers .img-bestsellers .img_a2 {
+  background-image: url(men-beast-within-3-0-oversized-fit-t-shirt-620155-1697028287-1.webp);
+  background-size: auto;
+  height: 250px;
+  width: 18%;
+}
+.bestsellers .img-bestsellers .img_a3 {
+  background-image: url(women-s-black-happier-than-ever-billie-graphic-printed-oversized-t-shirt.webp);
+  background-size: cover;
+  height: 250px;
+  width: 18%;
+}
+.bestsellers .img-bestsellers .img_a4 {
+  background-image: url(women-s-black-oversized-t-shirt.webp);
+  background-size: cover;
+  height: 250px;
+  width: 18%;
+}
+.bestsellers .img-bestsellers .img_a5 {
+  background-image: url(women-s-brown-sugar-spice-everything-nice-graphic-printed-oversized-t-shirt.webp);
+  background-size: cover;
+  height: 250px;
+  width: 18%;
 }/*# sourceMappingURL=main.css.map */

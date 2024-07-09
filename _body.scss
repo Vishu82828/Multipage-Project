@@ -255,44 +255,79 @@
         color: rgb(8, 8, 8);
     }
 
-    .img-bestsellers {
+    .large_img {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        height: 380px;
+        width: 100%;
         margin-top: 40px;
-        display: flex;
-        justify-content: space-around;
+        grid-gap: 20px;
 
-        .img_a1 {
-            background-image: url(men-s-black-house-of-the-dragon-iconic-graphic-printed-t-shirt.webp);
-            background-size: contain;
-            height: 250px;
-            width: 18%;
-        }
-
-        .img_a2 {
-            background-image: url(men-beast-within-3-0-oversized-fit-t-shirt-620155-1697028287-1.webp);
-            background-size: auto;
-            height: 250px;
-            width: 18%;
-        }
-
-        .img_a3 {
-            background-image: url(women-s-black-happier-than-ever-billie-graphic-printed-oversized-t-shirt.webp);
+        .img_a1{
+            background-image: url(hc1.gif);
             background-size: cover;
-            height: 250px;
-            width: 18%;
         }
 
-        .img_a4 {
-            background-image: url(women-s-black-oversized-t-shirt.webp);
+        .img_a2{
+            background-image: url(hc2.jpg);
             background-size: cover;
-            height: 250px;
-            width: 18%;
         }
 
-        .img_a5 {
-            background-image: url(women-s-brown-sugar-spice-everything-nice-graphic-printed-oversized-t-shirt.webp);
+        .img_a3{
+            background-image: url(hc3.gif);
             background-size: cover;
-            height: 250px;
-            width: 18%;
         }
+    }
+}
+
+// OUR BEST PICK -------
+.bestpick {
+
+    margin-left: 1.5%;
+
+    h2 {
+        margin-top: 60px;
+        text-align: center;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+        color: rgb(8, 8, 8);
+    }
+
+    .large_img2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        height: 380px;
+        width: 100%;
+        margin-top: 40px;
+        grid-gap: 20px;
+
+        .img_a4{
+            background-image: url(hc4.jpg);
+            background-size: cover;
+        }
+
+        .img_a5{
+            background-image: url(hc5.gif);
+            background-size: cover;
+        }
+
+        .img_a6{
+            background-image: url(hc6.jpg);
+            background-size: cover;
+        }
+    }
+}
+
+.lastBanner{
+    margin-top: 40px;
+    width: 100%;
+    height: 110px;
+    .banner {
+        background-image: url(lastBanner.webp);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
     }
 }

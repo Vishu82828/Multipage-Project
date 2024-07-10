@@ -55,6 +55,10 @@
   padding: 0 15px;
   border-right: 1px solid #faf7f7;
 }
+.navbar .navbar-menu li a {
+  all: unset;
+  cursor: pointer;
+}
 .navbar .navbar-menu li:hover {
   background-color: #6c4444;
   color: #e3e0e0;

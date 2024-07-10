@@ -49,69 +49,75 @@
         font-weight: bold;
     }
 
-    // Menu items styling
-    .navbar-menu {
-        list-style-type: none;
-        display: flex;
-
-        li{
-            padding: 0 15px;
-            border-right: 1px solid #faf7f7;
-            a{
-                all: unset;
-                cursor: pointer;
+        // Menu items styling
+        .navbar-menu {
+            list-style-type: none;
+            display: flex;
+    
+            li {
+                padding: 0 15px;
+                border-right: 1px solid #faf7f7;
+    
+                a {
+                    all: unset;
+                    cursor: pointer;
+                }
+            }
+    
+            li:hover {
+                background-color: #6c4444;
+                color: #e3e0e0;
+                padding: 10px;
+                border-radius: 20px;
             }
         }
-        li:hover{
-            background-color: #6c4444;
-            color: #e3e0e0;
-            padding: 10px;
-            border-radius: 20px;
+    
+        //Search box
+        .search {
+            padding: 0 15px;
+            border-right: 1px solid #fcfafa;
+            width: 25%;
+    
+            input {
+                border: none;
+                outline: none;
+                width: 100%;
+                height: 40px;
+                border-radius: 10px;
+            }
         }
-    }
-
-    //Search box
-    .search{
-        padding: 0 15px;
-        border-right: 1px solid #fcfafa;
-        width: 25%;
-        input{
-            border: none;
-            outline: none;
-            width: 100%;
-            height: 40px;
-            border-radius: 10px;
+    
+        // Icons styling
+        .icons {
+            span {
+                margin-left: 15px;
+                cursor: pointer;
+            }
+    
+            a {
+                text-decoration: none;
+                color: black;
+            }
+    
+            a:hover {
+                background-color: #6c4444;
+                color: #e3e0e0;
+                padding: 10px;
+                border-radius: 20px;
+            }
         }
-    }
-
-    // Icons styling
-    .icons {
-        span {
-            margin-left: 15px;
-            cursor: pointer;
+    
+        // Responsive adjustments
+        @media screen and (max-width: 600px) {
+            .menu {
+                display: none;
+            }
+    
+            .menu-icon {
+                display: block;
+            }
         }
-        a{
-            text-decoration: none;
-            color: black;
         }
-        a:hover{
-            background-color: #6c4444;
-            color: #e3e0e0;
-            padding: 10px;
-            border-radius: 20px;
-        }
-    }
-
-    // Responsive adjustments
-    @media screen and (max-width: 600px) {
-        .menu {
-            display: none;
-        }
-        .menu-icon {
-            display: block;
-        }
-    }
-}
 
 // Heading Lines
 .heading{

@@ -47,6 +47,15 @@
     .navbar-logo {
         font-size: 30px;
         font-weight: bold;
+        a{
+            all: unset;
+            cursor: pointer;
+        }
+        a:hover{
+            color: #e3e0e0;
+            background-color: rgb(44, 123, 97);
+            border-radius: 5px;
+        }
     }
 
     // Menu items styling
@@ -94,17 +103,6 @@
                 font-size: 1.5rem;
             }
         }
-        a{
-            text-decoration: none;
-            color: black;
-            font-size: large;
-        }
-        a:hover{
-            background-color: #6c4444;
-            color: #e3e0e0;
-            padding: 10px;
-            border-radius: 20px;
-        }
     }
 
     // Responsive adjustments
@@ -117,101 +115,61 @@
         }
     }
 }
-
-// MENS -------------------------------------------------------------------------------------
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:repeat(5, 1fr) ;
-    gap: 20px;
-    padding: 20px;
-    background-color: #e8e8e8;
-
-    .product {
-        border: 1px solid #ccc;
-        padding: 10px;
-        background-color: #fff;
-    }
-
-    .product img {
-        width: 100%;
-        height: auto;
-    }
-
-    .price {
-        color: red;
-        font-weight: bold;
-    }
-}
-
-// FOOTER  -----------------------------------------------------------
-.heading{
-    small{
-        margin: 30px;
-        a{
-            all: unset;
-            cursor: pointer;
+// Product Details ---------------------------------------------------------------------
+.product{
+    .head{
+        ul{
+            display: flex;
+            margin-top: 5px;
+            li{
+                padding: 10px;
+                list-style-type: none;
+                color: rgb(106, 128, 128);
+            }
         }
     }
-    h1{
-        font-size: 3rem;
-        margin: 1rem;
-        text-align: center;
-    }
-}
-.footer {
-    background: #1c1c1c;
-    color: #ffffff;
-    margin-top: 20px;
-
-    #inform-section {
-        width: 100%;
+    .detail{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        /* padding-top: 20px; */
-    }
-
-    #about-us {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #about-us div {
-        margin-right: 85px;
-        margin-top: 40px;
-
-    }
-
-    #about-us ul {
-        margin-top: 20px;
-        line-height: 2.3;
-        list-style-type: none;
-
-    }
-
-    #about-us span {
-        color: rgb(255 210 50);
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    #updates>div {
-        margin-top: 40px;
-    }
-
-    #updates span {
-        font-size: 23px;
-    }
-
-    #updates input {
-        width: 65%;
-        height: 38px;
-        font-size: 16px;
-        padding-left: 15px;
-        border-radius: 10px;
-        background-color: rgb(232 232 232);
-
+        .dimg{
+            width: 50%;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(5,auto);
+            height: 800px;
+            .imgd1{
+                grid-row-start: 1;
+                grid-row-end: -6;
+                background-color: #ac2828;
+                height: 100px;
+            }
+            .imgd2{
+                grid-row-start: 1;
+                grid-column-end: 2;
+                background-color: #1d0f85;
+                height: 100px;
+            }
+            .imgd3{
+                grid-row-start: 4;
+                grid-column-end: 4;
+                background-color: #cb1fa9;
+                height: 100px;
+            }
+            .imgd4{
+                grid-row-start: 2;
+                grid-column-end: 1;
+                background-color: #13c04f;
+                height: 100px;
+            }
+            .imgd5{
+                grid-row-start: 2;
+                grid-column-end: 1;
+                background-color: #6c4444;
+                height: 100px;
+            }
+        }
+        .det{
+            width: 50%;
+            background-color: #6c4444;
+        }
     }
 }

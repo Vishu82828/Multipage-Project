@@ -58,6 +58,10 @@
             padding: 0 15px;
             border-right: 1px solid #faf7f7;
             // font-family: arial;
+            a{
+                all: unset;
+                cursor: pointer;
+            }
         }
         li:hover{
             background-color: #6c4444;

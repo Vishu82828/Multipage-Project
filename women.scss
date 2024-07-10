@@ -57,10 +57,7 @@
         li{
             padding: 0 15px;
             border-right: 1px solid #faf7f7;
-            a{
-                all: unset;
-                cursor: pointer;
-            }
+            // font-family: arial;
         }
         li:hover{
             background-color: #6c4444;
@@ -74,7 +71,7 @@
     .search{
         padding: 0 15px;
         border-right: 1px solid #fcfafa;
-        width: 25%;
+        width: 35%;
         input{
             border: none;
             outline: none;
@@ -89,10 +86,14 @@
         span {
             margin-left: 15px;
             cursor: pointer;
+            i{
+                font-size: 1.5rem;
+            }
         }
         a{
             text-decoration: none;
             color: black;
+            font-size: large;
         }
         a:hover{
             background-color: #6c4444;
@@ -113,14 +114,100 @@
     }
 }
 
-// Heading Lines
+// MENS -------------------------------------------------------------------------------------
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(5, 1fr) ;
+    gap: 20px;
+    padding: 20px;
+    background-color: #e8e8e8;
+
+    .product {
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+
+    .price {
+        color: red;
+        font-weight: bold;
+    }
+}
+
+// FOOTER  -----------------------------------------------------------
 .heading{
-    ul{
+    small{
+        margin: 30px;
+        a{
+            all: unset;
+            cursor: pointer;
+        }
+    }
+    h1{
+        font-size: 3rem;
+        margin: 1rem;
+        text-align: center;
+    }
+}
+.footer {
+    background: #1c1c1c;
+    color: #ffffff;
+    margin-top: 20px;
+
+    #inform-section {
+        width: 100%;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
-        font-family: arial;
-        padding: 13px 14px;
-        text-decoration: none;
-        list-style: none;
+        /* padding-top: 20px; */
+    }
+
+    #about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #about-us div {
+        margin-right: 85px;
+        margin-top: 40px;
+
+    }
+
+    #about-us ul {
+        margin-top: 20px;
+        line-height: 2.3;
+        list-style-type: none;
+
+    }
+
+    #about-us span {
+        color: rgb(255 210 50);
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #updates>div {
+        margin-top: 40px;
+    }
+
+    #updates span {
+        font-size: 23px;
+    }
+
+    #updates input {
+        width: 65%;
+        height: 38px;
+        font-size: 16px;
+        padding-left: 15px;
+        border-radius: 10px;
+        background-color: rgb(232 232 232);
+
     }
 }

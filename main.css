@@ -55,6 +55,16 @@
   padding: 0 15px;
   border-right: 1px solid #faf7f7;
 }
+.navbar .navbar-menu li a {
+  all: unset;
+  cursor: pointer;
+}
+.navbar .navbar-menu li:hover {
+  background-color: #6c4444;
+  color: #e3e0e0;
+  padding: 10px;
+  border-radius: 20px;
+}
 .navbar .search {
   padding: 0 15px;
   border-right: 1px solid #fcfafa;
@@ -74,6 +84,12 @@
 .navbar .icons a {
   text-decoration: none;
   color: black;
+}
+.navbar .icons a:hover {
+  background-color: #6c4444;
+  color: #e3e0e0;
+  padding: 10px;
+  border-radius: 20px;
 }
 @media screen and (max-width: 600px) {
   .navbar .menu {
@@ -411,11 +427,6 @@
   color: #ffffff;
   margin-top: 20px;
 }
-.footer .logo1 {
-  color: rgb(255, 210, 50);
-  font-size: 20px;
-  font-weight: 600;
-}
 .footer #inform-section {
   width: 100%;
   display: flex;
@@ -449,7 +460,7 @@
   font-size: 23px;
 }
 .footer #updates input {
-  width: 260px;
+  width: 65%;
   height: 38px;
   font-size: 16px;
   padding-left: 15px;
@@ -482,6 +493,9 @@
 .footer #summary a {
   text-decoration: none;
   color: rgb(81, 204, 204);
+}
+.footer #summary h4::first-letter {
+  font-size: 3rem;
 }
 .footer #summary h4,
 .footer p {

@@ -1,0 +1,226 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top-Navbar */
+.top_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .top-menu{
+        display: flex;
+        list-style: none;
+        // gap: 20px;
+        li{
+            margin-left: 15px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .top2-menu{
+        display: flex;
+        list-style: none;
+        li{
+            margin-left: 15px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e3e0e0;
+    padding: 10px;
+
+    // Logo styling
+    .navbar-logo {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    // Menu items styling
+    .navbar-menu {
+        list-style-type: none;
+        display: flex;
+
+        li{
+            padding: 0 15px;
+            border-right: 1px solid #faf7f7;
+            // font-family: arial;
+        }
+        li:hover{
+            background-color: #6c4444;
+            color: #e3e0e0;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    }
+
+    //Search box
+    .search{
+        padding: 0 15px;
+        border-right: 1px solid #fcfafa;
+        width: 35%;
+        input{
+            border: none;
+            outline: none;
+            width: 100%;
+            height: 40px;
+            border-radius: 10px;
+        }
+    }
+
+    // Icons styling
+    .icons {
+        span {
+            margin-left: 15px;
+            cursor: pointer;
+            i{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    // Responsive adjustments
+    @media screen and (max-width: 600px) {
+        .menu {
+            display: none;
+        }
+        .menu-icon {
+            display: block;
+        }
+    }
+}
+
+//SING UP -------------------------------------------------------------------
+.singup {
+    display: flex;
+    .imgsing {
+        height: 500px;
+        width: 50%;
+        background-color: #f7f7d8;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+
+        .img_singup {
+            background-image: url(ik-signup-desktop-v1.jpg);
+            background-size: cover;
+            height: 100%;
+            width: 320px;
+        }
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        left: 5%;
+        h1{
+            font-size: 3rem;
+            a{
+                all: unset;
+                cursor: pointer;
+            }
+        }
+        p{
+            color: #867a7a;
+        }
+        // .search2{
+        //     padding: 0 15px;
+        //     border-right: 1px solid #fcfafa;
+        //     width: 100%;
+        //     height: 40px;
+        //     input{
+        //         width: 100%;
+        //         padding: 10px;
+        //         color: white;
+        //         border-radius: 5px;
+        //         cursor: pointer;
+        //     }
+        // } 
+        // .continu{
+        //     padding: 0 15px;
+        //     border-right: 1px solid #fcfafa;
+        //     width: 100%;
+        //     height: 40px;
+        //     button {
+        //         width: 100%;
+        //         padding: 10px;
+        //         background-color: #32CD32;
+        //         color: white;
+        //         border: none;
+        //         border-radius: 5px;
+        //         cursor: pointer;
+        //     }
+        //     button:hover {
+        //         background-color: #2E8B57;
+        //     }
+        // }  
+        .signup-form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-size: 14px;
+        }
+        
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        small {
+            color: red;
+            font-size: 12px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            a{
+                all: unset;
+            }
+        }
+        
+        button:hover {
+            background-color: #2E8B57;
+        }
+    }
+}

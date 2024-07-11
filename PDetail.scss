@@ -229,6 +229,9 @@
                 border: none;
                 cursor: pointer;
                 font-weight: bold;
+                a{
+                    all: unset;
+                }
             }
             .add-to-bag-btn {
                 background-color: #FFD700;

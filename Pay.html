@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="Pay.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="PDetail.css">
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <div class="top_nav">
         <ul class="top-menu">
@@ -42,51 +40,61 @@
         </div>
     </div>
 
-    <!-- ---------------------------------Prodect Details  -------------------------------------->
-
-    <div class="product">
-        <div class="head">
-            <ul>
-                <li>Home</li>
-                <li>/</li>
-                <li>Men clothing </li>
-                <li>/</li>
-                <li>Men's T-Shirts </li>
-                <li>/</li>
-                <li>Men's Printed T-Shirts</li>
-                <li>/</li>
-                <li>Men's Black Storm Trooper Graphic Printed Oversized T-shirt</li>
-            </ul>
-        </div>
-        <div class="detail">
-            <div class="dimg">
-                <div class="imgd1"></div>
+    <!-- --------------------------------- Payment Page -------------------------------------->
+    <div class="payment">
+        <div class="second-half">
+            <div class="order-header">Delivering order to Vishwajeet Singh</div>
+            <div class="order-container">
+                <div class="delivery-details">
+                    <p><span class="item-description">You are paying for these items:</span></p>
+                    <img src="pd.webp" alt="">
+                    <p>Men's Black Storm Trooper Graphic Printed Oversize T-shirt</p>
+                    <p>Estimated delivery by <strong>15 July 2024</strong></p>
+                </div>
+                <div class="price-details">
+                    <table>
+                        <tr>
+                            <td>Total MRP (Incl. of taxes)</td>
+                            <td>₹1449</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery Fee</td>
+                            <td>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Discount on MRP</td>
+                            <td>- ₹750</td>
+                        </tr>
+                        <tr>
+                            <td>Final amount</td>
+                            <td>₹699</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="payment-methods">
+                    <h3>Choose your payment method</h3>
+                    <div class="method">
+                        <span class="icon">💳</span>
+                        <span>Debit & Credit Card</span>
+                    </div>
+                    <div class="method">
+                        <span class="icon">👛</span>
+                        <span>Wallet</span>
+                    </div>
+                    <div class="method">
+                        <span class="icon">📱</span>
+                        <span>UPI</span>
+                    </div>
+                    <div class="method">
+                        <span class="icon">🏦</span>
+                        <span>Net banking</span>
+                    </div>
+                    <div class="method">
+                        <span class="icon">💵</span>
+                        <span>Cash On Delivery</span>
+                    </div>
+                </div>
             </div>
-            <div class="det">
-                <h2>OFFICIAL STAR WARS MERCHANDISE</h2>
-                <span>Men's Black Storm Trooper Graphic Printed Oversized <br> T-shirt</span>
-                <div class="rating">⭐4.5</div>
-                <div class="price">₹699<span class="original-price">₹1,449</span><span class="discount">51% OFF</span>
-                </div>
-                <div class="taxes">inclusive of all taxes</div>
-                <div class="notification">62 people bought this in the last 7 days</div>
-                <div class="features">
-                    <div class="oversized">OVERSIZED FIT</div>
-                    <div class="cotton">100% COTTON</div>
-                </div>
-                <div class="offer">Tribe members get an extra discount of ₹60 and FREE shipping. Learn more.</div>
-                <div class="size-selector">
-                    <button class="size-button">S (9 left)</button>
-                    <button class="size-button">M</button>
-                    <button class="size-button">L</button>
-                    <button class="size-button">XL</button>
-                    <button class="size-button">2XL (3 left)</button>
-                    <button class="size-button">3XL (5 left)</button>
-                </div>
-                <div class="add-to-bag-btn"><a href="Pay.html">BUY NOW</a></div>
-                <div class="wishlist-btn"><a href="Pay.html">ADD TO BAG</a></div>
-            </div>
-
         </div>
     </div>
 
@@ -139,5 +147,4 @@
         </div>
     </div>
 </body>
-
 </html>

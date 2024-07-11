@@ -133,44 +133,193 @@
         display: flex;
         .dimg{
             width: 50%;
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: repeat(5,auto);
-            height: 800px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            margin-top: 2%;
             .imgd1{
-                grid-row-start: 1;
-                grid-row-end: -6;
-                background-color: #ac2828;
-                height: 100px;
-            }
-            .imgd2{
-                grid-row-start: 1;
-                grid-column-end: 2;
-                background-color: #1d0f85;
-                height: 100px;
-            }
-            .imgd3{
-                grid-row-start: 4;
-                grid-column-end: 4;
-                background-color: #cb1fa9;
-                height: 100px;
-            }
-            .imgd4{
-                grid-row-start: 2;
-                grid-column-end: 1;
-                background-color: #13c04f;
-                height: 100px;
-            }
-            .imgd5{
-                grid-row-start: 2;
-                grid-column-end: 1;
-                background-color: #6c4444;
-                height: 100px;
+                background-image: url(pd.webp);
+                background-size: cover;
+                height: 100%;
+                width: 80%;
             }
         }
         .det{
             width: 50%;
-            background-color: #6c4444;
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            h2{
+                font-family: Arial, sans-serif;
+                margin-bottom: 5px;
+                color: #777;
+            }
+            .span{
+                font-family: Arial, sans-serif;
+                margin-bottom: 10px;
+                color: #777;
+            }
+            .rating {
+                color: #FFD700; /* Gold color for stars */
+                margin-bottom: 5px;
+                margin-top: 20px;
+                border:1px solid #777;
+                width: 8%;
+            }
+            .price {
+                font-size: 24px;
+                color: #333; /* Dark grey for price */
+            }
+            .original-price {
+                text-decoration: line-through;
+                color: #777; /* Light grey for original price */
+                font-size: 18px;
+                margin-left: 10px;
+            }
+            .discount {
+                color: green;
+                font-weight: bold;
+                margin-left: 10px;
+            }
+            .taxes {
+                font-size: 12px;
+                color: #333; /* Dark grey for tax info */
+            }
+            .notification {
+                background-color: #E0ECFF;
+                color: #000;
+                padding: 10px;
+                text-align: center;
+            }
+            .features {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+            }
+            .offer {
+                background-color: #F9F9F9;
+                padding: 10px;
+            }
+            .size-selector {
+                display: flex;
+                justify-content: space-between;
+            }
+            .size-button {
+                border-radius: 5px;
+                border: 1px solid black;
+                padding: 10px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+            .size-button:hover{
+                background-color: #000;
+                color: #FFD700;
+            }
+            .size-button.active {
+                color: #fff;
+            }
+            .stock-info {
+                color: red;
+            }
+            .add-to-bag-btn,
+            .wishlist-btn {
+                padding: 15px;
+                margin-top: 20px;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            .add-to-bag-btn {
+                background-color: #FFD700;
+                color: black;
+                text-align: center;
+            }
+            .add-to-bag-btn:hover{
+                background-color: rgb(186, 71, 18);
+                color: #E0ECFF;
+            }
+            .wishlist-btn {
+                background-color:  #FFD700;
+                color: black;
+                text-align: center;
+            }
+            .wishlist-btn:hover{
+                background-color: rgb(186, 71, 18);
+                color: #E0ECFF;
+            }
         }
+    }
+}
+
+// FOOTER  -----------------------------------------------------------
+.heading{
+    small{
+        margin: 30px;
+        a{
+            all: unset;
+            cursor: pointer;
+        }
+    }
+    h1{
+        font-size: 3rem;
+        margin: 1rem;
+        text-align: center;
+    }
+}
+.footer {
+    background: #1c1c1c;
+    color: #ffffff;
+    margin-top: 20px;
+
+    #inform-section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* padding-top: 20px; */
+    }
+
+    #about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #about-us div {
+        margin-right: 85px;
+        margin-top: 40px;
+
+    }
+
+    #about-us ul {
+        margin-top: 20px;
+        line-height: 2.3;
+        list-style-type: none;
+
+    }
+
+    #about-us span {
+        color: rgb(255 210 50);
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #updates>div {
+        margin-top: 40px;
+    }
+
+    #updates span {
+        font-size: 23px;
+    }
+
+    #updates input {
+        width: 65%;
+        height: 38px;
+        font-size: 16px;
+        padding-left: 15px;
+        border-radius: 10px;
+        background-color: rgb(232 232 232);
+
     }
 }

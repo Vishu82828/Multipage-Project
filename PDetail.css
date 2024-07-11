@@ -117,42 +117,178 @@
 }
 .product .detail .dimg {
   width: 50%;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: repeat(5, auto);
-  height: 800px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
 }
 .product .detail .dimg .imgd1 {
-  grid-row-start: 1;
-  grid-row-end: -6;
-  background-color: #ac2828;
-  height: 100px;
-}
-.product .detail .dimg .imgd2 {
-  grid-row-start: 1;
-  grid-column-end: 2;
-  background-color: #1d0f85;
-  height: 100px;
-}
-.product .detail .dimg .imgd3 {
-  grid-row-start: 4;
-  grid-column-end: 4;
-  background-color: #cb1fa9;
-  height: 100px;
-}
-.product .detail .dimg .imgd4 {
-  grid-row-start: 2;
-  grid-column-end: 1;
-  background-color: #13c04f;
-  height: 100px;
-}
-.product .detail .dimg .imgd5 {
-  grid-row-start: 2;
-  grid-column-end: 1;
-  background-color: #6c4444;
-  height: 100px;
+  background-image: url(pd.webp);
+  background-size: cover;
+  height: 100%;
+  width: 80%;
 }
 .product .detail .det {
   width: 50%;
-  background-color: #6c4444;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.product .detail .det h2 {
+  font-family: Arial, sans-serif;
+  margin-bottom: 5px;
+  color: #777;
+}
+.product .detail .det .span {
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+  color: #777;
+}
+.product .detail .det .rating {
+  color: #FFD700; /* Gold color for stars */
+  margin-bottom: 5px;
+  margin-top: 20px;
+  border: 1px solid #777;
+  width: 8%;
+}
+.product .detail .det .price {
+  font-size: 24px;
+  color: #333; /* Dark grey for price */
+}
+.product .detail .det .original-price {
+  text-decoration: line-through;
+  color: #777; /* Light grey for original price */
+  font-size: 18px;
+  margin-left: 10px;
+}
+.product .detail .det .discount {
+  color: green;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.product .detail .det .taxes {
+  font-size: 12px;
+  color: #333; /* Dark grey for tax info */
+}
+.product .detail .det .notification {
+  background-color: #E0ECFF;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+}
+.product .detail .det .features {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.product .detail .det .offer {
+  background-color: #F9F9F9;
+  padding: 10px;
+}
+.product .detail .det .size-selector {
+  display: flex;
+  justify-content: space-between;
+}
+.product .detail .det .size-button {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.product .detail .det .size-button:hover {
+  background-color: #000;
+  color: #FFD700;
+}
+.product .detail .det .size-button.active {
+  color: #fff;
+}
+.product .detail .det .stock-info {
+  color: red;
+}
+.product .detail .det .add-to-bag-btn,
+.product .detail .det .wishlist-btn {
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.product .detail .det .add-to-bag-btn {
+  background-color: #FFD700;
+  color: black;
+  text-align: center;
+}
+.product .detail .det .add-to-bag-btn:hover {
+  background-color: rgb(186, 71, 18);
+  color: #E0ECFF;
+}
+.product .detail .det .wishlist-btn {
+  background-color: #FFD700;
+  color: black;
+  text-align: center;
+}
+.product .detail .det .wishlist-btn:hover {
+  background-color: rgb(186, 71, 18);
+  color: #E0ECFF;
+}
+
+.heading small {
+  margin: 30px;
+}
+.heading small a {
+  all: unset;
+  cursor: pointer;
+}
+.heading h1 {
+  font-size: 3rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.footer {
+  background: #1c1c1c;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.footer #inform-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* padding-top: 20px; */
+}
+.footer #about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer #about-us div {
+  margin-right: 85px;
+  margin-top: 40px;
+}
+.footer #about-us ul {
+  margin-top: 20px;
+  line-height: 2.3;
+  list-style-type: none;
+}
+.footer #about-us span {
+  color: rgb(255, 210, 50);
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer #updates > div {
+  margin-top: 40px;
+}
+.footer #updates span {
+  font-size: 23px;
+}
+.footer #updates input {
+  width: 65%;
+  height: 38px;
+  font-size: 16px;
+  padding-left: 15px;
+  border-radius: 10px;
+  background-color: rgb(232, 232, 232);
 }/*# sourceMappingURL=PDetail.css.map */

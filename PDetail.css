@@ -54,7 +54,8 @@
 .navbar .navbar-logo a:hover {
   color: #e3e0e0;
   background-color: rgb(44, 123, 97);
-  border-radius: 5px;
+  border-radius: 50px;
+  padding: 5px;
 }
 .navbar .navbar-menu {
   list-style-type: none;
